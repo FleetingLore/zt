@@ -8,7 +8,7 @@ D = det [
 =  1 times  2 times -2 -  1 times 1 times 4
 -  2 times -2 times -2 +  2 times 1 times -3
 + -4 times -2 times  4 - -4 times 2 times -3
-det == 2026/5/18/1
+det == 2026/5/18/2
 ---
 
 = -4 - 4 - 4 + -6 + 32 - 24
