@@ -1,26 +1,25 @@
 % jfb 1
-$$\int \frac{\text{d} x}{a x} = \frac{1}{a} \ln |a x| + C$$
+$$\int \frac{\text{d} x}{a x + b} = \frac{1}{a} \ln |a x + b| + C$$
 ---
 
-# $\Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}$
+# $\Gamma _0 = \alpha _0: x \in \mathbb{R}$
 
-$a = 0 \to a x = 0 \to \blacksquare\ [\mathbb{R}::\text{div}]\ 除零错误$
-$a \ne 0 \to [\mathbb{R}::\text{div}]$
-$a x < 0 \to \square\ \alpha _1$
-$a x = 0 \to \blacksquare\ [\mathbb{R}::\text{div}]\ 除零错误$
-$a x > 0 \to \square\ \alpha _2$
+$[\mathbb{R}::\text{div}]$
+$a x + b < 0 \to \square\ \alpha _1$
+$a x + b = 0 \to \blacksquare\ [\mathbb{R}::\text{div}]\ 除零错误$
+$a x + b > 0 \to \square\ \alpha _2$
 ---
 
-## $\Gamma _0 \to \Gamma _1 = \alpha _1: a x < 0$
+## $\Gamma _0 \to \Gamma _1 = \alpha _1: a x + b < 0$
 
-$$\ln |a x| = \ln (- a x)$$
+$$\ln |a x + b| = \ln (- (a x + b))$$
 $$x \ne 0$$
 
-$\frac{\text{d} \ln {\color{Peach} |a x|}}{\text{d} x}$
+$\frac{\text{d} \ln {\color{Peach} |a x + b|}}{\text{d} x}$
 $= \frac{\text{d} \ln (- a x)}{\text{d} x}$
 $= {\color{Peach} \frac{\text{d} \ln (- a x)}{\text{d} (- a x)}} \cdot {\color{Peach} \frac{\text{d} (- a x)}{\text{d} x}}$
-$= \frac{{\color{Peach} 1}}{- a x} {\color{Peach} \cdot (- {\color{Black} a})}$
-$= \frac{1}{x}$
+$= {\color{Peach} -} \frac{{\color{Peach} 1}}{x} {\color{Peach} \cdot (- {\color{Black} a})}$
+$= \frac{a}{x}$
 
 $\blacksquare\ \alpha _1$
 ---
@@ -32,14 +31,14 @@ $$x \ne 0$$
 
 $\frac{\text{d} \ln {\color{Peach} |x|}}{\text{d} x}$
 $= {\color{Peach} \frac{\text{d} \ln x}{\text{d} x}} \cdot {\color{Peach} \frac{\text{d} (a x)}{\text{d} x}}$
-$= \frac{{\color{Peach} 1}}{a x} {\color{Peach} \cdot} a$
-$= \frac{1}{x}$
+$= \frac{{\color{Peach} 1}}{x} {\color{Peach} \cdot} a$
+$= \frac{a}{x}$
 
 $\blacksquare\ \alpha _2$
 
 ## $\Gamma _0 = \Gamma _1 + \Gamma _2$
 
-$$\frac{\text{d} \ln |a x|}{\text{d} x} = \frac{1}{x} \quad (a x \ne 0)$$
+$$\frac{\text{d} \ln |a x|}{\text{d} x} = \frac{a}{x} \quad (a x \ne 0)$$
 
 $[\mathbb{R}::\text{int}]$
 $\mathbf{ori}\ C \in \mathbb{R}$

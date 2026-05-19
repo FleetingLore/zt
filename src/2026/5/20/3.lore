@@ -6,7 +6,7 @@ $$\int \frac{\text{d} x}{x} = \ln |x| + C$$
 
 $[\mathbb{R}::\text{div}]$
 $x < 0 \to \square\ \alpha _1$
-$x = 0 \to \blacksquare$
+$x = 0 \to \blacksquare\ [\mathbb{R}::\text{div}]\ 除零错误$
 $x > 0 \to \square\ \alpha _2$
 ---
 
@@ -17,7 +17,7 @@ $$\ln |x| = \ln (- x)$$
 $\frac{\text{d} \ln {\color{Peach} |x|}}{\text{d} x}$
 $= \frac{\text{d} \ln (- x)}{\text{d} x}$
 $= {\color{Peach} \frac{\text{d} \ln (- x)}{\text{d} (- x)}} \cdot {\color{Peach} \frac{\text{d} (- x)}{\text{d} x}}$
-$= {\color{Peach} -} \frac{1}{x} \cdot {\color{Peach} (- 1)}$
+$= {\color{Peach} -} \frac{1}{x} {\color{Peach} \cdot (- 1)}$
 $= \frac{1}{x}$
 
 $\blacksquare\ \alpha _1$
