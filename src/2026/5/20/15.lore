@@ -12,7 +12,7 @@ $\displaystyle = \int \frac{1}{\frac{u - b}{a} \cdot u ^2} \cdot \frac{1}{a} \ \
 $\displaystyle = \int \frac{a}{u ^2 (u - b)} \cdot \frac{1}{a} \ \text{d} u$
 $\displaystyle = \int \frac{\text{d} u}{u ^2 (u - b)}$
 
-+ $\displaystyle \mathbf{use}\ \displaystyle \mathbf{let} \frac{1}{u ^2 (u - b)} = \frac{- \frac{1}{b ^2}}{u} + \frac{- \frac{1}{b}}{u ^2} + \frac{\frac{1}{b ^2}}{u - b}$ == 2026/5/20/12
++ $\displaystyle \mathbf{use}\ \frac{1}{u ^2 (u - b)} = \frac{- \frac{1}{b ^2}}{u} + \frac{- \frac{1}{b}}{u ^2} + \frac{\frac{1}{b ^2}}{u - b}$ == 2026/5/20/12
 $\displaystyle = \int \left( {\color{Cyan} -\frac{1}{b ^2 u} - \frac{1}{b u ^2} + \frac{1}{b ^2 (u - b)} } \right) \ \text{d} u$
 
 $\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
