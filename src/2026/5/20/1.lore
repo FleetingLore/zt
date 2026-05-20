@@ -1,6 +1,0 @@
-设 $D: |x| + |y| \le 1$, 则 $\iint _D \ \text{d} x \ \text{d} y =$ ____.
----
-
-$D$ 是一个长为 $\sqrt{2}$ 的正方形.
-
-$$\iint _D \text{d} x \text{d} y = 2$$

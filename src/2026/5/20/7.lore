@@ -1,23 +1,21 @@
 % jfb 2
-$$\int (a x + b) ^\mu \ \text{d} x = \frac{1}{a (\mu + 1)} (a x + b)^{\mu + 1} + C \ (\mu \ne - 1)$$
-
 ---
-## $\Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}, \langle \text{static} \rangle u \in \mathbb{R} \backslash \{- 1\}$
 
-$\mathbf{ctx}\ \langle \text{换元法} \rangle u = a x + b$
-$\color{Grey} \text{d} u = a \ \text{d} x$
-$\text{d} x = \frac{1}{a} \ \text{d} u$
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}, \langle \text{static} \rangle u \in \mathbb{R} \backslash \{- 1\}$
 
-## $\Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
 
 $\displaystyle \int (a x + b) ^\mu \ \text{d} x$
 $\displaystyle = \frac{1}{a} \int u ^{\mu} \ \text{d} u$
 
-$[\mathbb{R}::int]$
-$\mathbf{ori}\ C \in \mathbb R$
-$= \frac{1}{a} \frac{1}{\mu + 1} u ^{\mu + 1}+ \color{Cyan} C$
-$= \frac{1}{a (\mu + 1)} u ^{\mu + 1}+ \color{Cyan} C$
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = \frac{1}{a} \frac{1}{\mu + 1} u ^{\mu + 1}+ \color{Cyan} C$
+$\displaystyle = \frac{1}{a (\mu + 1)} u ^{\mu + 1}+ \color{Cyan} C$
 
-## $\Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
 
-$= \frac{1}{a (\mu + 1)} (a x + b)^{\mu + 1} + C$
+$\displaystyle = \frac{1}{a (\mu + 1)} (a x + b)^{\mu + 1} + C$
