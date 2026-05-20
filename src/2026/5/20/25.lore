@@ -1,0 +1,5 @@
+\frac{1}{(v ^2 - b) ^2} = \frac{1}{4 b} \frac{1}{(v - \sqrt{b}) ^2} + \frac{1}{4 b} \frac{1}{(v + \sqrt{b}) ^2} - \frac{1}{4 b \sqrt{b}} \frac{1}{v - \sqrt{b}} + \frac{1}{4 b \sqrt{b}} \frac{1}{v + \sqrt{b}}
+
+$\displaystyle \mathbf{let}\ \frac{1}{(v ^2 - b) ^2} = \frac{A}{v - \sqrt{b}} + \frac{B}{(v - \sqrt{b}) ^2} + \frac{C}{v + \sqrt{b}} + \frac{D}{(v + \sqrt{b}) ^2}$
+$\displaystyle 1 = A (v - \sqrt{b})(v + \sqrt{b}) ^2 + B (v + \sqrt{b}) ^2 + C (v + \sqrt{b})(v - \sqrt{b}) ^2 + D (v - \sqrt{b}) ^2$
+$\displaystyle \text{solving: } A = -\frac{1}{4 b \sqrt{b}},\ B = \frac{1}{4 b},\ C = \frac{1}{4 b \sqrt{b}},\ D = \frac{1}{4 b}$

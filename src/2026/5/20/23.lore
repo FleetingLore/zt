@@ -1,0 +1,6 @@
+\frac{2}{v ^2 - b} = \frac{1}{\sqrt{b}} \left( \frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right)
+
+$\displaystyle \mathbf{let}\ \frac{2}{v ^2 - b} = \frac{A}{v - \sqrt{b}} + \frac{B}{v + \sqrt{b}}$
+$\displaystyle 2 = A (v + \sqrt{b}) + B (v - \sqrt{b})$
+$\displaystyle v ^1: A + B = 0 \implies B = -A$
+$\displaystyle v ^0: A \sqrt{b} - B \sqrt{b} = 2 \implies 2 A \sqrt{b} = 2 \implies A = \frac{1}{\sqrt{b}},\ B = - \frac{1}{\sqrt{b}}$

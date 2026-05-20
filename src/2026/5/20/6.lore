@@ -2,7 +2,7 @@
 
 ## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
 
-$\displaystyle \mathbf{ctx}\ \langle \text{换元法}: \rangle u = a x + b$
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
 $\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
 $\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
 

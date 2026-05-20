@@ -1,5 +1,4 @@
 % \displaystyle \mathbf{let} \frac{1}{u ^2 (u - b)} = \frac{- \frac{1}{b ^2}}{u} + \frac{- \frac{1}{b}}{u ^2} + \frac{\frac{1}{b ^2}}{u - b}
----
 
 $\displaystyle 1 = A u (u - b) + B (u - b) + C u ^2$
 $\displaystyle u ^2: A + C = 0 \implies C = -A$

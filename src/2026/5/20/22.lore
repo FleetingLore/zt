@@ -1,0 +1,29 @@
+% jfb 15
+
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{\text{d} x}{x \sqrt{a x + b}}$
+$\displaystyle = \int \frac{1}{\frac{u - b}{a} \cdot \sqrt{u}} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \int \frac{\text{d} u}{(u - b) \sqrt{u}}$
+
+$\displaystyle \mathbf{let}\ v = \sqrt{u},\ u = v ^2,\ \text{d} u = 2 v \ \text{d} v$
+$\displaystyle = \int \frac{2 v \ \text{d} v}{(v ^2 - b) v}$
+$\displaystyle = \int \frac{2 \ \text{d} v}{v ^2 - b}$
+
++ $\displaystyle \mathbf{use}\ \frac{2}{v ^2 - b} = {\color{Cyan} \frac{1}{\sqrt{b}} \left( \frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right) }$ == 2026/5/20/23
+$\displaystyle = \frac{1}{\sqrt{b}} \int \left( \frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right) \ \text{d} v$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = \frac{1}{\sqrt{b}} \big( \ln |v - \sqrt{b}| - \ln |v + \sqrt{b}| \big) + \color{Cyan} C$
+$\displaystyle = \frac{1}{\sqrt{b}} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = \frac{1}{\sqrt{b}} \ln \left| \frac{\sqrt{a x + b} - \sqrt{b}}{\sqrt{a x + b} + \sqrt{b}} \right| + C$

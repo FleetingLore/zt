@@ -1,0 +1,28 @@
+% jfb 17
+
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{\sqrt{a x + b}}{x} \ \text{d} x$
+$\displaystyle = \int \frac{\sqrt{u}}{\frac{u - b}{a}} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \int \frac{\sqrt{u}}{u - b} \ \text{d} u$
+
+$\displaystyle \mathbf{let}\ v = \sqrt{u},\ u = v ^2,\ \text{d} u = 2 v \ \text{d} v$
+$\displaystyle = \int \frac{v}{v ^2 - b} \cdot 2 v \ \text{d} v$
+$\displaystyle = 2 \int \frac{v ^2}{v ^2 - b} \ \text{d} v$
+$\displaystyle = 2 \int \left( 1 + \frac{b}{v ^2 - b} \right) \ \text{d} v$
+$\displaystyle = 2 v + 2 b \int \frac{\text{d} v}{v ^2 - b}$
+
++ $\displaystyle \mathbf{use}\ \int \frac{\text{d} v}{v ^2 - b} = {\color{Cyan} \frac{1}{2 \sqrt{b}} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| }$ == 2026/5/20/12
+$\displaystyle = 2 v + 2 b \cdot \frac{1}{2 \sqrt{b}} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| + \color{Cyan} C$
+$\displaystyle = 2 v + \sqrt{b} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = 2 \sqrt{a x + b} + \sqrt{b} \ln \left| \frac{\sqrt{a x + b} - \sqrt{b}}{\sqrt{a x + b} + \sqrt{b}} \right| + C$

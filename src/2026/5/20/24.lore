@@ -1,0 +1,31 @@
+% jfb 16
+
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{\text{d} x}{x ^2 \sqrt{a x + b}}$
+$\displaystyle = \int \frac{1}{\left( \frac{u - b}{a} \right) ^2 \cdot \sqrt{u}} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = a \int \frac{\text{d} u}{(u - b) ^2 \sqrt{u}}$
+
+$\displaystyle \mathbf{let}\ v = \sqrt{u},\ u = v ^2,\ \text{d} u = 2 v \ \text{d} v$
+$\displaystyle = a \int \frac{2 v \ \text{d} v}{(v ^2 - b) ^2 v}$
+$\displaystyle = 2 a \int \frac{\text{d} v}{(v ^2 - b) ^2}$
+
++ $\displaystyle \mathbf{use}\ \frac{1}{(v ^2 - b) ^2} = {\color{Cyan} \frac{1}{4 b} \left( \frac{1}{(v - \sqrt{b}) ^2} + \frac{1}{(v + \sqrt{b}) ^2} \right) - \frac{1}{4 b \sqrt{b}} \left( \frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right) }$ == 2026/5/20/25
+$\displaystyle = 2 a \int \left[ \frac{1}{4 b} \left( \frac{1}{(v - \sqrt{b}) ^2} + \frac{1}{(v + \sqrt{b}) ^2} \right) - \frac{1}{4 b \sqrt{b}} \left( \frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right) \right] \ \text{d} v$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = 2 a \left[ \frac{1}{4 b} \left( -\frac{1}{v - \sqrt{b}} - \frac{1}{v + \sqrt{b}} \right) - \frac{1}{4 b \sqrt{b}} \big( \ln |v - \sqrt{b}| - \ln |v + \sqrt{b}| \big) \right] + \color{Cyan} C$
+$\displaystyle = \frac{a}{2 b} \left( -\frac{2 v}{v ^2 - b} \right) - \frac{a}{2 b \sqrt{b}} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| + C$
+$\displaystyle = -\frac{a v}{b (v ^2 - b)} - \frac{a}{2 b \sqrt{b}} \ln \left| \frac{v - \sqrt{b}}{v + \sqrt{b}} \right| + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = -\frac{a \sqrt{a x + b}}{b \cdot a x} - \frac{a}{2 b \sqrt{b}} \ln \left| \frac{\sqrt{a x + b} - \sqrt{b}}{\sqrt{a x + b} + \sqrt{b}} \right| + C$
+$\displaystyle = -\frac{\sqrt{a x + b}}{b x} - \frac{a}{2 b \sqrt{b}} \ln \left| \frac{\sqrt{a x + b} - \sqrt{b}}{\sqrt{a x + b} + \sqrt{b}} \right| + C$

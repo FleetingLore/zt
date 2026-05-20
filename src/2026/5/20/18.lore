@@ -1,0 +1,23 @@
+% jfb 11
+
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int x \sqrt{a x + b} \ \text{d} x$
+$\displaystyle = \int \frac{u - b}{a} \cdot \sqrt{u} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \frac{1}{a ^2} \int (u - b) u ^{1/2} \ \text{d} u$
+$\displaystyle = \frac{1}{a ^2} \int \left( u ^{3/2} - b u ^{1/2} \right) \ \text{d} u$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = \frac{1}{a ^2} \left( \frac{u ^{5/2}}{5/2} - b \frac{u ^{3/2}}{3/2} \right) + \color{Cyan} C$
+$\displaystyle = \frac{1}{a ^2} \left( \frac{2}{5} u ^{5/2} - \frac{2b}{3} u ^{3/2} \right) + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = \frac{1}{a ^2} \left( \frac{2}{5} (a x + b) ^{5/2} - \frac{2b}{3} (a x + b) ^{3/2} \right) + C$
