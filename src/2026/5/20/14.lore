@@ -1,0 +1,21 @@
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{x ^2}{(a x + b) ^2} \ \text{d} x$
+$\displaystyle = \int \frac{\left( \frac{u - b}{a} \right) ^2}{u ^2} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \frac{1}{a ^3} \int \frac{(u - b) ^2}{u ^2} \ \text{d} u$
+$\displaystyle = \frac{1}{a ^3} \int \frac{u ^2 - 2 b u + b ^2}{u ^2} \ \text{d} u$
+$\displaystyle = \frac{1}{a ^3} \int \left( 1 - \frac{2 b}{u} + \frac{b ^2}{u ^2} \right) \ \text{d} u$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = \frac{1}{a ^3} \left( u - 2 b \ln |u| - \frac{b ^2}{u} \right) + \color{Cyan} C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = \frac{1}{a ^3} \left( a x + b - 2 b \ln |a x + b| - \frac{b ^2}{a x + b} \right) + C$
