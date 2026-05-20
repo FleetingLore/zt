@@ -16,8 +16,8 @@ $$\ln |a x + b| = \ln (- (a x + b))$$
 $$x \ne 0$$
 
 $\frac{\text{d} \ln {\color{Peach} |a x + b|}}{\text{d} x}$
-$= \frac{\text{d} \ln (- a x)}{\text{d} x}$
-$= {\color{Peach} \frac{\text{d} \ln (- a x)}{\text{d} (- a x)}} \cdot {\color{Peach} \frac{\text{d} (- a x)}{\text{d} x}}$
+$= \frac{\text{d} \ln (- (a x + b))}{\text{d} x}$
+$= {\color{Peach} \frac{\text{d} \ln (- a x + b)}{\text{d} (- a x + b)}} \cdot {\color{Peach} \frac{\text{d} (- a x + b)}{\text{d} x}}$
 $= {\color{Peach} -} \frac{{\color{Peach} 1}}{x} {\color{Peach} \cdot (- {\color{Black} a})}$
 $= \frac{a}{x}$
 

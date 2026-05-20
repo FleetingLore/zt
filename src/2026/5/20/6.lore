@@ -8,15 +8,15 @@ $\mathbf{ctx}\ \langle \text{换元法} \rangle u = a x + b$
 $\color{Grey} \text{d} u = a \ \text{d} x$
 $\text{d} x = \frac{1}{a} \ \text{d} u$
 
-## $\Gamma _1 = \alpha _1: \alpha _0 + \text{换元法}$
+## $\Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
 
-$\int \frac{\text{d} x}{a x + b}$
-$= \frac{1}{a} \int \frac{\text{d} u}{u}$
+$\displaystyle \int \frac{\text{d} x}{a x + b}$
+$\displaystyle = \frac{1}{a} \int \frac{\text{d} u}{u}$
 ---
 $[\mathbb{R}::int]$
 $\mathbf{ori}\ C \in \mathbb R$
 $= \frac{1}{a} \ln |u| + \color{Cyan} C$
 
-## $\Gamma _1 = \Gamma _0 + \langle 换元法 \rangle$
+## $\Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
 
 $= \frac{1}{a} \ln |a x + b| + C$
