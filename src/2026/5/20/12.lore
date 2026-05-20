@@ -1,0 +1,9 @@
+% \frac{1}{u (u - b) ^2} = \frac{\frac{1}{b ^2}}{u} + \frac{-\frac{1}{b ^2}}{u - b} + \frac{\frac{1}{b}}{(u - b) ^2}
+---
+
+$\displaystyle \mathbf{let} \frac{1}{u (u - b) ^2} = \frac{A}{u} + \frac{B}{u - b} + \frac{C}{(u - b) ^2}$
+$\displaystyle 1 = A (u - b) ^2 + B u (u - b) + C u$
+$\displaystyle u ^2: A + B = 0 \implies B = -A$
+$\displaystyle u ^1: -2 A b - B b + C = 0 \implies -A b + C = 0 \implies C = A b$
+$\displaystyle u ^0: A b ^2 = 1$
+$\displaystyle A = \frac{1}{b ^2},\ B = - \frac{1}{b ^2},\ C = \frac{1}{b}$

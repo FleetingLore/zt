@@ -1,6 +1,3 @@
-% jfb 3
----
-
 ## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
 
 $\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
@@ -10,13 +7,15 @@ $\displaystyle x = \frac{u - b}{a}$
 
 ## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
 
-$\displaystyle \int \frac{x}{a x + b} \ \text{d} x$
-$\displaystyle = \frac{1}{a ^2} \int \frac{u - b}{u} \ \text{d} u$
-$\displaystyle = \frac{1}{a ^2} \int 1 - \frac{b}{u} \ \text{d} u$
+$\displaystyle \int \frac{x^2}{a x + b} \ \text{d} x$
+$\displaystyle = \int \frac{\left( \frac{u - b}{a} \right)^2}{u} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \frac{1}{a^3} \int \frac{(u - b)^2}{u} \ \text{d} u$
+$\displaystyle = \frac{1}{a^3} \int \frac{u^2 - 2 b u + b^2}{u} \ \text{d} u$
+$\displaystyle = \frac{1}{a^3} \int \left( u - 2 b + \frac{b^2}{u} \right) \ \text{d} u$
 
 $\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
-$\displaystyle = \frac{1}{a ^2} \left(u - b \ln |u|\right)+ \color{Cyan} C$
+$\displaystyle = \frac{1}{a^3} \left( \frac{u^2}{2} - 2 b u + b^2 \ln |u| \right) + \color{Cyan} C$
 
 ## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
 
-$\displaystyle = \frac{1}{a ^2} (a x + b - b \ln |a x + b|) + C$
+$\displaystyle = \frac{1}{a ^3} \left(\frac{1}{2} (a x + b) ^2 - 2 b (a x + b) + b ^2 \ln |a x + b| \right) + C$

@@ -1,0 +1,28 @@
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R},\ \langle\text{static}\rangle\ a \in \mathbb{R},\ \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{\text{d} x}{x ^2 (a x + b)}$
+$\displaystyle = \int \frac{1}{\left( \frac{u - b}{a} \right) ^2 \cdot u} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \int \frac{a ^2}{(u - b) ^2 u} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = a \int \frac{\text{d} u}{u (u - b) ^2}$
+
++ $\displaystyle \mathbf{use}\ \frac{1}{u (u - b) ^2} = \frac{\frac{1}{b ^2}}{u} + \frac{-\frac{1}{b ^2}}{u - b} + \frac{\frac{1}{b}}{(u - b) ^2}$ == 2026/5/20/12
+$\displaystyle = a \int \left( {\color{Cyan} \frac{1}{b ^2 u} - \frac{1}{b ^2 (u - b)} + \frac{1}{b (u - b) ^2}} \right) \ \text{d} u$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = a \left( \frac{1}{b ^2} \ln |u| - \frac{1}{b ^2} \ln |u - b| - \frac{1}{b (u - b)} \right) + \color{Cyan} C$
+$\displaystyle = \frac{a}{b ^2} \ln \left| \frac{u}{u - b} \right| - \frac{a}{b (u - b)} + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = \frac{a}{b ^2} \ln \left| \frac{a x + b}{a x} \right| - \frac{a}{b (a x)} + C$
+$\displaystyle = \frac{a}{b ^2} \ln \left| \frac{a x + b}{x} \right| - \frac{1}{b x} + \left( C - \frac{a}{b ^2} \ln |a| \right)$
+
+$\displaystyle \mathbf{overload}\ C \in \mathbb{R}$
+$\displaystyle = - \frac{1}{b x} + \frac{a}{b ^2} \ln \left| \frac{a x + b}{x} \right| + {\color{Cyan} C}$

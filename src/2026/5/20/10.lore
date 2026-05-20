@@ -1,0 +1,23 @@
+## $\displaystyle \Gamma _0 = \alpha _0: x \in \mathbb{R}, \langle\text{static}\rangle\ a \in \mathbb{R}, \langle\text{static}\rangle\ b \in \mathbb{R}$
+
+$\displaystyle \mathbf{ctx}\ \langle \text{换元法} \rangle: u = a x + b$
+$\displaystyle \color{Grey} \text{d} u = a \ \text{d} x$
+$\displaystyle \text{d} x = \frac{1}{a} \ \text{d} u$
+$\displaystyle x = \frac{u - b}{a}$
+
+## $\displaystyle \Gamma _1 = \alpha _1: \alpha _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle \int \frac{\text{d} x}{x (a x + b)}$
+$\displaystyle = \int \frac{1}{\frac{u - b}{a} \cdot u} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \int \frac{a}{u (u - b)} \cdot \frac{1}{a} \ \text{d} u$
+$\displaystyle = \int \frac{\text{d} u}{u (u - b)}$
+$\displaystyle = \frac{1}{b} \int \left( \frac{1}{u - b} - \frac{1}{u} \right) \ \text{d} u$
+
+$\displaystyle [\mathbb{R}::int]\ \mathbf{ori}\ C \in \mathbb R$
+$\displaystyle = \frac{1}{b} \big( \ln |u - b| - \ln |u| \big) + \color{Cyan} C$
+$\displaystyle = \frac{1}{b} \ln \left| \frac{u - b}{u} \right| + C$
+
+## $\displaystyle \Gamma _1 = \Gamma _0 + \langle \text{换元法} \rangle$
+
+$\displaystyle = \frac{1}{b} \ln \left| \frac{a x}{a x + b} \right| + C$
+$\displaystyle = - \frac{1}{b} \ln \left| \frac{a x + b}{x} \right| + C$
