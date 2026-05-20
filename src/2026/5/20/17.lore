@@ -1,0 +1,5 @@
+% jfb 10
+
++ $\displaystyle \mathbf{use}\ \int (a x + b) ^\mu \ \text{d} x = \frac{1}{a (\mu + 1)} (a x + b)^{\mu + 1} + C$ == 2026/5/20/12
+$\mathbf{\overload}\ u = \frac{1}{2}$
+$\displaystyle = {\color{Cyan} \frac{2}{3 a} \sqrt{(a x + b) ^3} + C}$
